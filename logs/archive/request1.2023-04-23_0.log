@@ -1,10 +1,10 @@
 #logback.classic pattern: [REQUEST1] [%-5level] %d{yyyy-MM-dd HH:mm:ss} [%thread] [%logger{40}:%line] - %msg%n
-[REQUEST1] [INFO ] 2023-04-23 23:05:17 [main] [dev.be.logback.LogbackApplication:55] - Starting LogbackApplication using Java 11.0.19 on choejin-an-ui-MacBookPro.local with PID 21779 (/Users/jinan/study/fastcampus/log-back/out/production/classes started by jinan in /Users/jinan/study/fastcampus/log-back)
-[REQUEST1] [INFO ] 2023-04-23 23:05:17 [main] [dev.be.logback.LogbackApplication:637] - The following 1 profile is active: "prod"
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [o.s.b.w.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.74]
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [o.a.c.c.C.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 293 ms
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [o.s.b.w.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
-[REQUEST1] [INFO ] 2023-04-23 23:05:18 [main] [dev.be.logback.LogbackApplication:61] - Started LogbackApplication in 0.597 seconds (JVM running for 0.999)
+[REQUEST1] [INFO ] 2023-04-23 23:11:34 [main] [dev.be.logback.LogbackApplication:55] - Starting LogbackApplication using Java 11.0.19 on choejin-an-ui-MacBookPro.local with PID 22124 (/Users/jinan/study/fastcampus/log-back/out/production/classes started by jinan in /Users/jinan/study/fastcampus/log-back)
+[REQUEST1] [INFO ] 2023-04-23 23:11:34 [main] [dev.be.logback.LogbackApplication:637] - The following 1 profile is active: "prod"
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [o.s.b.w.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.74]
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [o.a.c.c.C.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 286 ms
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [o.s.b.w.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+[REQUEST1] [INFO ] 2023-04-23 23:11:35 [main] [dev.be.logback.LogbackApplication:61] - Started LogbackApplication in 0.589 seconds (JVM running for 0.836)

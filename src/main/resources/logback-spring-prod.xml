@@ -1,15 +1,33 @@
 <included>
+    <!-- property를 선언해줘야 LOG_DIR_IS_UNDEFINED 오류폴더가 생기는걸 방지할수 있다. -->
+    <property resource="logback-variables.properties" />
+
     <!-- 운영 로그설정 file 저장-->
     <appender name="REQUEST1" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/request1.log</file>
+        <file>${LOG_DIR}/request1.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>logs/archive/request1.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <fileNamePattern>${LOG_DIR}/archive/request1.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
             <maxFileSize>1KB</maxFileSize> <!-- 로그파일의 최대 크기 지정 -->
             <maxHistory>30</maxHistory> <!-- 로그파일 최대 보간 주기 (단위: 일) -->
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>
-                [REQUEST1] [%-5level] %d{yyyy-MM-dd HH:mm:ss} [%thread] [%logger{40}:%line] - %msg%n <!-- 여기서 패턴설정을 한다. -->
+                [REQUEST1] ${LOG_PATTERN}
+            </pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
+    <appender name="REQUEST2" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/request2.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/archive/request2.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>1KB</maxFileSize> <!-- 로그파일의 최대 크기 지정 -->
+            <maxHistory>30</maxHistory> <!-- 로그파일 최대 보간 주기 (단위: 일) -->
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [REQUEST2] ${LOG_PATTERN}
             </pattern>
             <outputPatternAsHeader>true</outputPatternAsHeader>
         </encoder>
@@ -17,6 +35,7 @@
 
     <root level="INFO">
         <appender-ref ref="REQUEST1" />
+        <appender-ref ref="REQUEST2" />
     </root>
 
 </included>

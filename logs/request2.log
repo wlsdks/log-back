@@ -1,0 +1,7 @@
+#logback.classic pattern: [REQUEST2] [%-5level] %d{yyyy-MM-dd HH:mm:ss} [%thread] [%logger{40}:%line] - %msg%n
+[REQUEST2] [INFO ] 2023-04-23 23:11:38 [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[REQUEST2] [INFO ] 2023-04-23 23:11:38 [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+[REQUEST2] [INFO ] 2023-04-23 23:11:38 [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet:547] - Completed initialization in 0 ms
+[REQUEST2] [INFO ] 2023-04-23 23:11:38 [http-nio-8080-exec-1] [dev.be.logback.controller.DemoController:15] - log --> INFO
+[REQUEST2] [WARN ] 2023-04-23 23:11:38 [http-nio-8080-exec-1] [dev.be.logback.controller.DemoController:16] - log --> WARN
+[REQUEST2] [ERROR] 2023-04-23 23:11:38 [http-nio-8080-exec-1] [dev.be.logback.controller.DemoController:17] - log --> ERROR
